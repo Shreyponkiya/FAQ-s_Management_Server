@@ -29,7 +29,7 @@ router.post("/add", async (req, res) => {
 
     console.log("Category:", category);
 
-    const login_url = `http://localhost:4000/user/verify/${jwt.sign(
+    const login_url = `https://faq-s-management-server-13.onrender.com/user/verify/${jwt.sign(
       { email },
       secret_key
     )}`;

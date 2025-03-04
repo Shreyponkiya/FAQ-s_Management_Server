@@ -36,7 +36,6 @@ router.delete("/delete/:id", async (req, res) => {
   }
 });
 module.exports = router;
-
 router.put("/update/:id", async (req, res) => {
   try {
     const updatedUser = await Category.findByIdAndUpdate(

@@ -74,7 +74,7 @@ router.get("/verify/:token", async (req, res) => {
       <p>You will be redirected to the login page shortly...</p>
       <script>
         setTimeout(() => {
-          window.location.href = "http://localhost:5173";
+          window.location.href = "https://faq-s-management-56eb.vercel.app/";
         }, 3000); // Redirect after 3 seconds
       </script>
     `);

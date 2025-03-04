@@ -11,7 +11,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 const MONGO_URL = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/signup_user"
 
-connect_mongo(MONGO_URL);
+connect_mongo(MONGO_URL, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 app.use(cors());
 app.use(body_parser.json());
 
